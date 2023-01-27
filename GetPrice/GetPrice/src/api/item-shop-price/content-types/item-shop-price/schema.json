@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "item_shop_prices",
+  "info": {
+    "singularName": "item-shop-price",
+    "pluralName": "item-shop-prices",
+    "displayName": "itemShopPrice",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "itemID": {
+      "type": "string"
+    },
+    "mvideoPrice": {
+      "type": "integer"
+    },
+    "eldoradoPrice": {
+      "type": "integer"
+    },
+    "dnsPrice": {
+      "type": "integer"
+    },
+    "citilinkPrice": {
+      "type": "integer"
+    },
+    "mvideoLink": {
+      "type": "string"
+    },
+    "eldoradoLink": {
+      "type": "string"
+    },
+    "dnsLink": {
+      "type": "string"
+    },
+    "citilinkLink": {
+      "type": "string"
+    }
+  }
+}

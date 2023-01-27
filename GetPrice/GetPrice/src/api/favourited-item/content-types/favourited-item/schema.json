@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favourited_items",
+  "info": {
+    "singularName": "favourited-item",
+    "pluralName": "favourited-items",
+    "displayName": "favouritedItem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isFavourite": {
+      "type": "boolean",
+      "default": false
+    },
+    "itemID": {
+      "type": "integer"
+    }
+  }
+}

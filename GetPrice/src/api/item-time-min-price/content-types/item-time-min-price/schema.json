@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "item_time_min_prices",
+  "info": {
+    "singularName": "item-time-min-price",
+    "pluralName": "item-time-min-prices",
+    "displayName": "itemTimeMinPrice"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "itemID": {
+      "type": "string"
+    },
+    "time1": {
+      "type": "date"
+    },
+    "price1": {
+      "type": "integer"
+    },
+    "time2": {
+      "type": "date"
+    },
+    "price2": {
+      "type": "integer"
+    },
+    "time3": {
+      "type": "date"
+    },
+    "price3": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "singularName": "item",
+    "pluralName": "items",
+    "displayName": "item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "shortDescription": {
+      "type": "richtext"
+    },
+    "longDescription": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios",
+        "files"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Смартфоны",
+        "Бытовая техника",
+        "Ноутбуки"
+      ]
+    },
+    "itemId": {
+      "type": "string",
+      "unique": true
+    },
+    "isFavorite": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
