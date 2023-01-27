@@ -280,7 +280,7 @@ const ItemDetails = () => {
                 {itemPriceArr.map((item) => (
                   <TableRow key={item.shop}>
                     <TableCell><Typography variant="h4">{item.shop}</Typography></TableCell>
-                    <TableCell><Typography variant="h4">{item.price === 0 ? "Нет в наличии" : item.price }</Typography></TableCell>
+                    <TableCell><Typography variant="h4">{item.price === 0 ? "Нет данных" : item.price === 1? "Нет в наличии" : item.price }</Typography></TableCell>
                     <TableCell> <a href={item.link}>
                       <img src={require(`../../assets/${item.shop}_icon.png`)} alt="ShopLogo" width="auto" height="40" />
                     </a>

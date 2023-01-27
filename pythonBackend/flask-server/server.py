@@ -34,8 +34,8 @@ def members():
 def search(text):
     #Добыча ссылок на товар с помощью поисковой системы
     mvideoLinks = scrape_google("site:mvideo.ru/products " + text )
-    eldoradoLinks = scrape_google("site:https://www.eldorado.ru/cat/detail/ " + text )
-    dnsLinks = scrape_google("site:https://www.dns-shop.ru/product/ " + text )
+    eldoradoLinks = scrape_google("site:https://www.eldorado.ru/cat/detail/ " + text)
+    dnsLinks = scrape_google("site:https://www.dns-shop.ru/product/ " + text + " купить")
     citilinkLinks = scrape_google("site:https://www.citilink.ru/product/ " + text )
     # # return(mvideoLinks)
     # return(mvideoLinks + eldoradoLinks + dnsLinks + citilinkLinks)
@@ -85,7 +85,8 @@ def search(text):
     mvideoBasePrice=(mvideoPriceData["body"]["materialPrices"][0]["price"]["basePrice"])
     mvideoPromoPrice=(mvideoPriceData["body"]["materialPrices"][0]["price"]["basePromoPrice"])
     
-    mvideoPrice = 0 if (mvideoSalePrice is None or mvideoIsSoldOut ) else mvideoSalePrice #Цена товара
+    mvideoPrice = 0 if (mvideoSalePrice is None ) else mvideoSalePrice #Цена товара
+    mvideoPrice = 1 if (mvideoIsSoldOut ) else mvideoSalePrice
     
 
     #Получение цены из эльдорадо!
@@ -115,7 +116,6 @@ def search(text):
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
-    #Добавить itemMinPrice? Чисто за актуальную дату накидывать
     
 
 @app.route("/testEldorado/<string:text>")
