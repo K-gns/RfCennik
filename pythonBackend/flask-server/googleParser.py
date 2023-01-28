@@ -4,17 +4,8 @@ import pandas as pd
 from requests_html import HTML
 from requests_html import HTMLSession
 
-# GOOGLE PARSER FUNCTIONALITY
 
 def get_source(url):
-    """Return the source code for the provided URL. 
-
-    Args: 
-        url (string): URL of the page to scrape.
-
-    Returns:
-        response (object): HTTP response object from requests_html. 
-    """
 
     try:
         session = HTMLSession()
