@@ -292,13 +292,9 @@ const ItemDetails = () => {
             </Table>
             <br />
           </Box>
-
           <Box paddingBottom={3} paddingTop={3}>
             <Typography variant="h3"><b>График изменения цены</b></Typography>
             <Line options={options} data={data} />
-
-
-
           </Box>
           <Box>
             <Box m="20px 0 5px 0" display="flex"
