@@ -24,47 +24,40 @@ function Footer() {
             mb="30px"
             color={shades.secondary[500]}
           >
-            ECOMMER
+            Ценник.РФ
           </Typography>
           <div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat
+          Найди свою лучшую цену
           </div>
         </Box>
 
         <Box>
           <Typography variant="h4" fontWeight="bold" mb="30px">
-            About Us
+            Про нас
           </Typography>
-          <Typography mb="30px">Careers</Typography>
-          <Typography mb="30px">Our Stores</Typography>
-          <Typography mb="30px">Terms & Conditions</Typography>
-          <Typography mb="30px">Privacy Policy</Typography>
+          <Typography mb="30px">Политика конфиденциальности</Typography>
+          <Typography mb="30px">Условия пользования</Typography>
         </Box>
 
         <Box>
           <Typography variant="h4" fontWeight="bold" mb="30px">
-            Customer Care
+            Поддержка
           </Typography>
-          <Typography mb="30px">Help Center</Typography>
-          <Typography mb="30px">Track Your Order</Typography>
-          <Typography mb="30px">Corporate & Bulk Purchasing</Typography>
-          <Typography mb="30px">Returns & Refunds</Typography>
+          <Typography mb="30px">Центр поддержки</Typography>
+          <Typography mb="30px">Контакты</Typography>
         </Box>
 
         <Box width="clamp(20%, 25%, 30%)">
           <Typography variant="h4" fontWeight="bold" mb="30px">
-            Contact Us
+            О нас
           </Typography>
           <Typography mb="30px">
-            50 north Whatever Blvd, Washington, DC 10501
+            Екатеринбург, 8 марта, 87
           </Typography>
           <Typography mb="30px" sx={{ wordWrap: "break-word" }}>
-            Email: mredwardroh@gmail.com
+            Email: kb465@mail.ru
           </Typography>
-          <Typography mb="30px">(222)333-4444</Typography>
+          <Typography mb="30px"></Typography>
         </Box>
       </Box>
     </Box>
