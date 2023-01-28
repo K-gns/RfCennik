@@ -120,13 +120,7 @@ def search(text):
 
 @app.route("/testEldorado/<string:text>")
 def eldorado(text):
-    #res3 = requests.post('http://localhost:1337/api/item-shop-prices', 
-    # json={ "data": {"itemID":"0", 
-    # "mvideoPrice":0, "mvideoLink":"", 
-    # "eldoradoPrice":0, "eldoradoLink":"", 
-    # "dnsPrice":0, "dnsLink":"", 
-    # "citilinkPrice":0, "citilinkLink":"", }})
-    #print(res3.json())
+    
     price = get_eldoradoPrice("https://www.eldorado.ru/cat/detail/smartfon-xiaomi-redmi-10c-4gb-64gb-blue/")
     print(price)
     #print("ДАННЫЕ", data)
